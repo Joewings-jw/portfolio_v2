@@ -421,6 +421,8 @@ let swiperPortfolio = new Swiper(".portfolio_container", {
     // loop: true,
     effect: "cube",
     grabCursor: true,
+    speed: 1500,
+    // autoplay: 1500,
     cubeEffect: {
         shadow: true,
         slideShadows: true,

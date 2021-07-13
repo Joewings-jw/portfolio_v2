@@ -136,6 +136,7 @@ img{
     padding: 2rem 0 4rem;
 }
 .section_title{
+    text-transform: capitalize;
     font-size: var(--h1-font-size);
 }
 .section_subtitle{
@@ -414,21 +415,29 @@ img{
 
 /* SKILLS */
 
-
+.skills {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
 .skills_container {
     margin-top: auto;
 }
-
-.skills_tech {
-    width: 30%;
-    display: inline-flex;
-    justify-content: space-evenly;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: var(--mb-0-5);
+.skills .swiper-slide img {
+    opacity: 0.5;
+    transition: 0.3s;
 }
 
+.skills .swiper-slide:hover img {
+  opacity: 1;
+}
 
+.swiper-pagination-skills {
+  margin-top: 20px;
+  position: relative;
+}
+.swiper-container .swiper-pagination-skills {
+    bottom: 0;
+}
 
 
 
@@ -623,9 +632,9 @@ img{
     text-align: center;
 }
 .project_bg {
-    /* background-color:#F8F8F8; */
-    background-image: url(/assets/img/projectIdea.jpg);
-    background-repeat: no-repeat;
+    background: linear-gradient(rgb(87, 87, 224, 0.3), rgb(87, 87, 224, 0.4)), url(/assets/img/projectIdea.jpg) fixed center center;
+    background-size: cover;
+    padding: 120px 0;
     background-position-x: left;
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -680,8 +689,21 @@ img{
 }
 
 /* contact */
+.contact {
+    background: url("../img/contact-bg.png") right center no-repeat;
+    position: relative;
+}
+.contact:before {
+    content: "";
+    background: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
 .contact_container {
-    row-gap: .3rem;
+    row-gap: .2rem;
 }
 .contact_information {
     display: flex;
@@ -700,64 +722,18 @@ img{
     font-size: var(--small-font-size);
     color: var(--text-color-light);
 }
-.contact_content {
-    background-color: var(--input-color);
-    border-radius: .5rem;
-    padding: .75rem 1rem .25rem;
-}
-.contact_label {
-    font-size: var(--small-font-size);
-    color: var(--title-color);
-}
-.contact_input {
-    width: 100%;
-    background-color: var(--input-color);
-    color:var(--text-color);
-    font-family: var(--body-font);
-    font-size: var(--normal-font-size);
-    border: none;
-    outline: none;
-    padding: .25rem .5rem .5rem 0;
 
-}
 
 .footer {
-    padding-top: 2rem;
-}
-.footer_container {
-    row-gap: 3.5rem;
-}
-.footer_bg {
-    background-color: var(--first-color-second);
-    padding: 2rem 0 3rem;
-}
-.footer_title {
-    font-size: var(--h1-font-size);
-    margin-bottom: var(--mb-0-25);
-}
-.footer_subtitle {
-    font-size: var(--small-font-size);
+    padding-top: 1rem;
 }
 
-.footer_links {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1.5rem;
-}
-.footer_link:hover {
-    color: var(--first-color-lighter);
-}
-.footer_social {
-    font-size: 1.25rem;
-    margin-right: var(--mb-1-5);
-}
-.footer_social:hover {
-    color: var(--first-color-lighter);
-}
+
 .footer_copy {
+    background-color: var(--first-color-alt);
     font-size: var(--small-font-size);
     text-align: center;
-    color: var(--text-color);
+    color: #fff;
     margin-top:var(--mb-3);
 }
 
@@ -881,18 +857,16 @@ img{
     .about_container,
     .portfolio_content,
     .project_container,
-    .contact_container,
     .footer_container  {
         grid-template-columns: repeat(2, 1fr);
     }
+    .contact_container{
+        grid-template-columns: repeat(3, 3fr);
+    }
     .swiper-container {
         width: 568px;
-      }
-    .skills_container {
-        display: grid;
-        grid-template-columns: .7fr;
-        justify-content: center;
     }
+   
     
 }
 
@@ -1019,18 +993,9 @@ img{
       }
 
     .footer_container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
-    .footer_bg {
-        padding: 3rem 0 3.5rem;
-    }
-    .footer_links {
-        flex-direction: row;
-        column-gap: 2rem;
-    }
-    .footer_social {
-        justify-self:flex-end;
-    }
+ 
     .footer_copy {
         margin-top: 4.5rem;
     }
@@ -1076,11 +1041,6 @@ img{
     }
     .swiper-container {
         width: 1024px;
-      }
-    .contact_form {
-        width: 460px;
     }
-    .contact_inputs {
-        grid-template-columns: repeat(2,1fr);
-    }
+  
 }

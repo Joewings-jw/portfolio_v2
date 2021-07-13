@@ -27,6 +27,45 @@ navMenu.classList.remove('show-menu')
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
+/**
+ * Clients Slider
+ */
+let swiperSkills = new Swiper('.skills_container', {
+    speed: 400,
+    loop: true,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+      
+    },
+  
+    breakpoints: {
+        320: {
+            slidesPerView: 2,
+            spaceBetween: 40
+        },
+        480: {
+            slidesPerView: 3,
+            spaceBetween: 60
+        },
+        640: {
+            slidesPerView: 4,
+            spaceBetween: 80
+        },
+        992: {
+            slidesPerView: 6,
+            spaceBetween: 100
+        }
+    }
+});
+
+
 
 //SERVICES MODAL
 const modalViews = document.querySelectorAll('.services_modal'),
@@ -59,12 +98,15 @@ let swiperPortfolio = new Swiper(".portfolio_container", {
 // loop: true,
 effect:"cube",
 grabCursor: true,
+speed: 1500,
+// autoplay: 1500,
 cubeEffect: {
   shadow: true,
   slideShadows: true,
   shadowOffset: 20,
   shadowScale: 0.64,
 },
+
 navigation: {
   nextEl: ".swiper-button-next",
   prevEl: ".swiper-button-prev",
@@ -92,7 +134,7 @@ pagination: {
 breakPoints: {
     568:{
         width: 568,
-        slidesPerView: 1,
+        slidesPerView: 2,
     }, 
     768:{
         width: 768,
@@ -100,7 +142,7 @@ breakPoints: {
     },
     1024:{
         width: 1024,
-        slidesPerView: 2,
+        slidesPerView: 3,
     }
     
 }
