@@ -734,7 +734,8 @@ img{
     font-size: var(--small-font-size);
     text-align: center;
     color: #fff;
-    margin-top:var(--mb-3);
+    margin-top:var(--mb-1);
+    padding: .5rem;
 }
 
 .scrollup {
