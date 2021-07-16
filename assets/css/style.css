@@ -7,7 +7,7 @@
 
     /* Colors */
     /* Change favorite color */
-    --hue-color: 230;/*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color: 35;/*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color),69%,50%);
@@ -372,15 +372,62 @@ img{
 }
 
 /* ABOUT */
+.about {
+    background-color: #fff;
+    display: flex;
+   
+}
+.about > .about__img,.about__content {
+    padding: 20px;
+    font-size: 30px;
+    height: 60vh;
+    margin: 0;
+}
+.about__img {
+    width: 60%;
+    background-color: rgb(241, 241, 241);
+    position: relative;
+    color: #000;
+}
+
+.about__content {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    color: #fff;
+    margin-right: 0;
+}
+.about__content:hover,
+.about__img:hover {
+    background-color: var(--first-color);
+}
+
+  
+.content h3 {
+    font-weight: 400;
+    font-size: 34px;
+}
+  
+.content h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+  
+.content p {
+    font-size: 15px;
+    color: #848484;
+}
+ .about_img {
+    width: 300px;
+    border-radius: 10px;
+
+    justify-self: center;
+    align-self: center;
+} 
 /* .about_img {
     width: 400px;
-    /* border-radius: .5rem; */
-    /* justify-self: center;
-    align-self: center; */
-/* //} */ */
-.about_img {
-    width: 400px;
-}
+} */
 .about_description {
     text-align: center;
     margin-bottom: var(--mb-2-5);
@@ -416,20 +463,19 @@ img{
 /* SKILLS */
 
 .skills {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    padding-top: .2rem;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,.15);
 }
 .skills_container {
     margin-top: auto;
 }
 .skills .swiper-slide img {
-    opacity: 0.5;
     transition: 0.3s;
 }
 
-.skills .swiper-slide:hover img {
-  opacity: 1;
-}
 
 .swiper-pagination-skills {
   margin-top: 20px;
@@ -1019,7 +1065,7 @@ img{
     }
     .about_img {
         width: 400px;
-        height: 350;
+        height: 400px;
     }
     .services_container {
         grid-template-columns: repeat(3, 250px);

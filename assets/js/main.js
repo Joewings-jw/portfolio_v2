@@ -34,7 +34,7 @@ let swiperSkills = new Swiper('.skills_container', {
     speed: 400,
     loop: true,
     autoplay: {
-        delay: 5000,
+        delay: 4000,
         disableOnInteraction: false
     },
     slidesPerView: 'auto',
