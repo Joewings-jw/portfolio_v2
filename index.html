@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">">
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -85,7 +86,8 @@
 </svg>
                         </div>
                         <div class="home_data">
-                            <h1 class="home_title">
+                            <h1 class="home_title" data-aos="fade-down" data-aos-easing="linear"
+                            data-aos-duration="1000">
                                 Hi,I'am Joseph.
                             </h1>
                             <h3 class="home_subtitle">Frontend Developer</h3>
@@ -94,7 +96,8 @@
                                     producing high quality work.I design and develop responsive web apps.
                             </p>
                            
-                            <a href="#contact" class="button button--flex">
+                            <a href="#contact" class="button button--flex" data-aos="slide-left" data-aos-easing="linear"
+                            data-aos-duration="1000">
                                 Hire Me <i class="uil uil-message button_icon"></i>
                             </a>
                         </div>
@@ -109,8 +112,10 @@
                 </div>
             </section>
             <section class="about" id="about" >
-                <div class="about__img">Mombasa</div>
-                <div class="about__content">Nairobi</div>
+                <div class="about__img" data-aos="slide-right" data-aos-easing="linear"
+                    data-aos-duration="1500">Mombasa</div>
+                <div class="about__content" data-aos="slide-left" data-aos-easing="linear"
+                data-aos-duration="1500">Nairobi</div>
             </section>
               <!--==================== ABOUT ====================-->
             <!-- <section class="section about" id="about">
@@ -146,7 +151,10 @@
                 </div> 
             </section> -->
             <section class="section skills" id="skills">
-                <div class="skills_container container swiper-container">
+                <div class="skills_container container swiper-container" data-aos="zoom-in-up"
+                data-aos-easing="linear"
+                data-aos-duration="1000"
+                >
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <img src="assets/img/svg_icons/logo-javascript.svg" loading="lazy" alt="Javascript" class="skill-img">
@@ -460,7 +468,8 @@
             <!--==================== PROJECT IN MIND ====================-->
             <section class="project section" id="project">
                 <div class="project_bg">
-                    <div class="project_container container grid">
+                    <div class="project_container container grid" data-aos="zoom-in"data-aos-easing="linear"
+                    data-aos-duration="1500">
                         <div class="project_data">
                             <h2 class="project_title">What shall we build together, today?</h2>
                             <p class="project_subtitle">Precisely for quality work </p>
@@ -564,10 +573,12 @@
             </section>
               <!--==================== CONTACT ME ====================-->
             <section class="contact section" id="contact">
-                <h2 class="section_title">Contact Me</h2>
+                <h2 class="section_title" data-aos="slide-left" data-aos-easing="linear"
+                data-aos-duration="1500">Contact Me</h2>
                 <span class="section_subtitle">Get in touch</span>
 
-                <div class="contact_container container grid">
+                <div class="contact_container container grid" data-aos="fade-right" data-aos-easing="linear"
+                data-aos-duration="1000">
                     <div class="contact_information">
                         <i class="uil uil-phone-alt contact_icon"></i>
 
@@ -608,9 +619,13 @@
         </a>
 
 
-
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script async src="assets/js/main.js"></script>
+
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
