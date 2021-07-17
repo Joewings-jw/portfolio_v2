@@ -99,6 +99,10 @@ let swiperPortfolio = new Swiper(".portfolio_container", {
 effect:"cube",
 grabCursor: true,
 speed: 1500,
+autoplay: {
+    delay: 3000,
+    disableOnInteraction: true
+},
 // autoplay: 1500,
 cubeEffect: {
   shadow: true,

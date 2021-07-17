@@ -7,7 +7,7 @@
 
     /* Colors */
     /* Change favorite color */
-    --hue-color: 35;/*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color: 30;/*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color),69%,50%);
@@ -384,7 +384,7 @@ img{
     margin: 0;
 }
 .about__img {
-    width: 60%;
+    width: 60vw;
     background-color: rgb(241, 241, 241);
     position: relative;
     color: #000;
@@ -463,11 +463,9 @@ img{
 /* SKILLS */
 
 .skills {
-    margin-left: 8rem;
-    margin-right: 8rem;
+    margin:0 10%;
     padding-top: .2rem;
-    background: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,.15);
+    background: var(--first-color-alt);
 }
 .skills_container {
     margin-top: auto;
@@ -478,7 +476,7 @@ img{
 
 
 .swiper-pagination-skills {
-  margin-top: 20px;
+  margin-top: 10px;
   position: relative;
 }
 .swiper-container .swiper-pagination-skills {
