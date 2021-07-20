@@ -31,10 +31,11 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
  * Clients Slider
  */
 let swiperSkills = new Swiper('.skills_container', {
-    speed: 400,
+    speed: 3000,
     loop: true,
     autoplay: {
-        delay: 4000,
+        enabled: true,
+        delay: 0,
         disableOnInteraction: false
     },
     slidesPerView: 'auto',
@@ -47,20 +48,16 @@ let swiperSkills = new Swiper('.skills_container', {
   
     breakpoints: {
         320: {
-            slidesPerView: 2,
-            spaceBetween: 40
+            slidesPerView: 2
         },
         480: {
-            slidesPerView: 3,
-            spaceBetween: 60
+            slidesPerView: 3
         },
         640: {
             slidesPerView: 4,
-            spaceBetween: 80
         },
         992: {
-            slidesPerView: 6,
-            spaceBetween: 100
+            slidesPerView: 6
         }
     }
 });
@@ -100,7 +97,7 @@ effect:"cube",
 grabCursor: true,
 speed: 1500,
 autoplay: {
-    delay: 3000,
+    delay: 2000,
     disableOnInteraction: true
 },
 // autoplay: 1500,
