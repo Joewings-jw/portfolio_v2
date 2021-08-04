@@ -20,12 +20,7 @@ Parcel makes your code portable. You can build your code for different environme
 
 #### yarn build to Build code once, in production mode.
 
-##### previews
 
-![Alt text](assets/img/previews/progress1.png?raw=true)
-
-
-![Alt text](assets/img/previews/progress2.png?raw=true)
 
 
 
