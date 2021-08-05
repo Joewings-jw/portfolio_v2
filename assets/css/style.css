@@ -375,21 +375,6 @@ img{
     color:var(--first-color-alt);
 }
 
-.overlay {
-    position: absolute;
-	top: 2rem;
-	width: 45%;
-	height: 46%;
-	background: rgba(69, 40, 215, 0.8);
-    color: #fff;
-	font-family: var(--body-font);
-	display: inline-flex;
-    /* flex-direction: row; */
-	align-items: center;
-	justify-content: center;
-	transition: opacity 0.25s;
-    opacity: 0;
-}
 
 
 .item:hover .overlay{
@@ -447,7 +432,7 @@ img{
 }
 
 .card {
-    background-color: #fff;
+    background-color: var(--first-color);
     border-radius: 0.25rem;
     box-shadow: 0 20px 40px -14px var(--body-color);
     display: flex;
@@ -456,7 +441,8 @@ img{
    
 }
 .bg {
-    background-color: var(--first-color-alt); 
+    background-color: var(--first-color-alt);
+    margin-bottom: 0; 
 }
 /* .card:hover {
     box-shadow: 0 20px 60px -14px var(--body-color);
