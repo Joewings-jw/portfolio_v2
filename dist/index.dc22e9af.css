@@ -365,15 +365,6 @@ img{
     margin: 0 3rem;
     padding: 0;
 }
-.card-link {
-    position: absolute;
-    top: 0; left: 0;
-    height: 100%; width: 100%;
-}
-.tech_stack {
-    width: 30px;
-    height: 30px;
-}
 .cards_item {
     display: flex;
     padding: 1rem;
