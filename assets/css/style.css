@@ -619,7 +619,6 @@ img{
         justify-self: center;
     }
    
-    .portfolio_content,
     .project_container,
     .footer_container  {
         grid-template-columns: repeat(2, 1fr);
@@ -654,9 +653,11 @@ img{
     [data-aos="flip-down"] {
 		transform: none !important;
 	}
-    .cards {
-        margin: 0; 
+
+    .main2{
+        margin: 0 -3rem;
     }
+  
 }
 @media screen and (min-width: 768px){ 
     .container{
@@ -722,9 +723,7 @@ img{
     .about_button {
         justify-content: initial;
     }
-    .portfolio_content {
-        align-items: center;
-    }
+ 
     .project {
         text-align: initial;
     }
@@ -749,10 +748,7 @@ img{
     .footer_container {
         grid-template-columns: repeat(1, 1fr);
     }
-/*  
-    .footer_copy {
-        margin-top: 1.5rem;
-    } */
+
 }
 
 
@@ -773,9 +769,6 @@ img{
         /* margin: 0; */
     }
    
-    /* .portfolio_content {
-        column-gap: 5rem;
-    } */
  
   
 }
